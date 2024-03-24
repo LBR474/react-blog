@@ -5,7 +5,7 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "moduleResolution": "Node", // Corrected
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -17,7 +17,10 @@
     "baseUrl": "./",
     "paths": {
       "@vitejs/plugin-react": ["node_modules/@vitejs/plugin-react/dist/index.es.js"]
-    }
+    },
+    "allowSyntheticDefaultImports": true, // Add this line
+     "allowImportingTsExtensions": true
+    
   },
   "include": ["src"]
 }
